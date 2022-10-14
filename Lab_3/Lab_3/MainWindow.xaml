@@ -1,0 +1,48 @@
+﻿<Window x:Class="Lab_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_3"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance local:MainWindow}"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <Grid>
+                    <oxy:PlotView Height="300" Grid.Row="0" Grid.Column="0" Model="{Binding HarmonicViewModel.OriginalSignalModel}" Controller="{Binding CommonViewModel.Controller}" />
+                    <oxy:PlotView Height="300" Grid.Row="0" Grid.Column="1" Model="{Binding HarmonicViewModel.RestoredSignalModel}" Controller="{Binding CommonViewModel.Controller}" />
+                </Grid>
+                <oxy:PlotView Height="300" Model="{Binding HarmonicViewModel.AmplitudeSpectrumModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding HarmonicViewModel.PhaseSpectrumModel}" Controller="{Binding CommonViewModel.Controller}" />
+                
+                <oxy:PlotView Height="300" Model="{Binding PolyHarmonicViewModel.OriginalSignalModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding PolyHarmonicViewModel.RestoredSignalModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding PolyHarmonicViewModel.AmplitudeSpectrumModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding PolyHarmonicViewModel.PhaseSpectrumModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding PolyHarmonicViewModel.RestoredSignalWithoutPhaseModel}" Controller="{Binding CommonViewModel.Controller}" />
+                
+                <oxy:PlotView Height="300" Model="{Binding FFTViewModel.OriginalSignalModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding FFTViewModel.RestoredSignalModel}" Controller="{Binding CommonViewModel.Controller}" />
+                
+                
+                <oxy:PlotView Height="300" Model="{Binding FilterViewModel.OriginalSignalModel}" Controller="{Binding CommonViewModel.Controller}" />
+                
+                <oxy:PlotView Height="300" Model="{Binding FilterViewModel.LowFrequencyFilteredModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding FilterViewModel.LowFrequencyAmplitudeSpectrumModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding FilterViewModel.LowFrequencyPhaseSpectrumModel}" Controller="{Binding CommonViewModel.Controller}" />
+                
+                <oxy:PlotView Height="300" Model="{Binding FilterViewModel.HighFrequencyFilteredModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding FilterViewModel.HighFrequencyAmplitudeSpectrumModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding FilterViewModel.HighFrequencyPhaseSpectrumModel}" Controller="{Binding CommonViewModel.Controller}" />
+
+                <oxy:PlotView Height="300" Model="{Binding FilterViewModel.BandpassFrequencyFilteredModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding FilterViewModel.BandpassFrequencyAmplitudeSpectrumModel}" Controller="{Binding CommonViewModel.Controller}" />
+                <oxy:PlotView Height="300" Model="{Binding FilterViewModel.BandpassFrequencyPhaseSpectrumModel}" Controller="{Binding CommonViewModel.Controller}" />
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

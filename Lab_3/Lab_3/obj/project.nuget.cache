@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "64vKRN2VbcL2rbZa36TEeaY6LCW0Ey4SRzMRTXnlR78biytN5nbryUa3Aq4exUbXQkyjq6KboBS4T8bfZ2yOnw==",
+  "success": true,
+  "projectFilePath": "C:\\COS\\Lab3\\Lab_3\\Lab_3\\Lab_3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nikita\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\Nikita\\.nuget\\packages\\oxyplot.wpf\\2.1.0\\oxyplot.wpf.2.1.0.nupkg.sha512",
+    "C:\\Users\\Nikita\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.0\\oxyplot.wpf.shared.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
